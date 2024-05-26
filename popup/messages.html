@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Todo List</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/skeleton/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/messages.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <ul id="todo-list" class="u-full-width"></ul>
+        <button id="back-button" class="u-full-width">Back</button>
+        <button id="add-button">Add</button>
+    </div>
+    <script src="list.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            chrome.storage.sync.get(['loggedIn'], function (result) {
+                if (!result.loggedIn) {
+                    window.location.href = 'login.html';
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

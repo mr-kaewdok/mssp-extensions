@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/skeleton/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Login</h1>
+        <form class="box">
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input id="username" value="user" class="input" type="text" placeholder="e.g. alex@example.com" />
+              </div>
+            </div>
+          
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control">
+                <input id="password" value="password" class="input" type="password" placeholder="********" />
+              </div>
+            </div>
+          
+            <button id="login-button" class="button is-primary">Sign in</button>
+          </form>
+        <div id="error-message" class="has-text-danger"></div>
+    </div>
+    <script src="login.js"></script>
+    
+</body>
+
+</html>
